@@ -21,4 +21,4 @@ The Age Calculator is a simple web app built to practice basic JavaScript, HTML,
 ## ❔ How to Use
 1. Enter your birthdate in the input field.
 2. Click "start" to see your age.
-3. Click "Reset" to clear the input and result.
+3. Click "reset" to clear the input and result.
