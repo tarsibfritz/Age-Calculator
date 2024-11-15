@@ -1,5 +1,8 @@
-const calculateButton = document.getElementById("start-btn");
+const startButton = document.getElementById("start-btn");
 const birthdayDate = document.getElementById("birthday");
+const userAge = document.getElementById("result");
+const resetButton = document.getElementById("reset-btn")
+
 
 function calculateAge(){
     const birthdayValue = birthdayDate.value;
@@ -7,7 +10,10 @@ function calculateAge(){
     if (birthdayValue == ""){
         alert("Please enter a valid date");
     } else{
+        startButton.style.display = "none";
         const age = getAge(birthdayValue);
+        userAge.innerText = `You are ${age} ${age > 1 ? "years" : "year"} old`;
+        resetButton.style.display = "inline-block"
     }
 }
 
@@ -24,4 +30,12 @@ function getAge(birthdayValue){
     return age;
 }
 
-calculateButton.addEventListener("click", calculateAge);
+// Reset Button Function
+resetButton.addEventListener("click", () => {
+    birthdayDate.value = '';
+    userAge.innerText = '';
+    resetButton.style.display = "none";
+    startButton.style.display = "inline-block"
+})
+
+startButton.addEventListener("click", calculateAge);

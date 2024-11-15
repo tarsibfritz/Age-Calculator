@@ -61,20 +61,27 @@ body {
 
 
 /* BUTTON STYLE */
-#start-btn {
+#start-btn, #reset-btn {
     width: 5rem;
     height: 2rem;
     padding: 1px;
     border: none;
     border-radius: 15px;
     font-family: "Jua", sans-serif;
-    margin-top: 15px;
     color: #fff;
     background-color: #385098cb;
     transition: background-color ease 0.2s;
 }
 
-#start-btn:hover {
+#start-btn {
+    margin-top: 15px;
+}
+
+#start-btn:hover, #reset-btn:hover {
     cursor: pointer;
     background-color: #2b4185cb;
+}
+
+#reset-btn {
+    display: none;
 }
