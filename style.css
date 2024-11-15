@@ -3,8 +3,11 @@ body {
     padding: 0;
     border: 0;
     font-family: "Jua", sans-serif;
+    color: #fff;
+    background-color: #D6D6D6;
 }
 
+/* CALCULATOR CONTAINER */
 .container {
     display: flex;
     justify-content: center;
@@ -18,7 +21,21 @@ body {
     background-color: #6D7FB5;
 }
 
+.container-content > h1 {
+    color: #fff;
+    text-shadow:  
+        2px 0 #2f3d71, /* Shadow on the right. */
+       -2px 0 #2f3d71, /* Shadow on the left. */
+        0 2px #2f3d71, /* Shadow on the bottom. */
+        0 -2px #2f3d71, /* Shadow on the top. */
+        2px 2px #2f3d71, /* Bottom-right corner. */
+       -2px 2px #2f3d71, /* Bottom-left corner. */
+        2px -2px #2f3d71, /* Top-right corner. */
+       -2px -2px #2f3d71; /* Top-left corner. */
+}
 
+
+/* BUTTON STYLE */
 #start-button {
     width: 5rem;
     height: 2rem;
