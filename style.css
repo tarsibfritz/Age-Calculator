@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: cemter;
     font-family: "Jua", sans-serif;
     color: #fff;
     background-color: #D6D6D6;
@@ -18,7 +22,9 @@ body {
 .container-content {
     padding: 2rem;
     border-radius: 20px;
+    width: 22rem;
     background-color: #6D7FB5;
+    box-shadow: 0 0 10px rgba(5, 4, 75, 0.2);
 }
 
 .container-content > h1 {
@@ -32,6 +38,25 @@ body {
        -2px 2px #2f3d71, /* Bottom-left corner. */
         2px -2px #2f3d71, /* Top-right corner. */
        -2px -2px #2f3d71; /* Top-left corner. */
+    margin-bottom: 5px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form > label {
+    color: #CED7F2;
+    margin-bottom: 20px;
+}
+
+#birthday {
+    height: 25px;
+    padding: 4px;
+    border: 2px solid #43569B;
+    border-radius: 13px;
+    background-color: #e6e8ee98;
 }
 
 
