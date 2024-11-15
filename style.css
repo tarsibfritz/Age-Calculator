@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Jua", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-content {
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #6D7FB5;
+}
+
+
+#start-button {
+    width: 5rem;
+    height: 2rem;
+    padding: 1px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #385098cb;
+    transition: 0.3s;
+}
+
+#start-button:hover {
+    cursor: pointer;
+    background-color: #2b4185cb;
+}
